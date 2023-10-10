@@ -1,0 +1,58 @@
+Nesta tarefa, solicitamos que você desenvolva um programa utilizando o framework Laravel para consumir o
+API https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0
+e exibir os dados do usuário em um cartão, exibindo as opções de edição e exclusão. O objetivo é avaliar seu
+capacidade de configurar o Laravel, trabalhar com APIs e implementar uma interface de usuário com paginação.
+
+Requisitos:
+
+Configuração do Laravel:
+
+Instale o Laravel em seu ambiente de desenvolvimento.
+Configure o ambiente para executar corretamente o Laravel.
+
+Divisão de tarefas:
+
+Para organizar sua estratégia de acordo com o projeto apresentado, divida-a em tarefas menores. Mire em
+descreva seu método de trabalho em uma lista passo a passo. Anote quantas tarefas você achar adequado.
+
+Consumo de API:
+
+Implemente a rota necessária no Laravel para consumir os dados da API.
+Utilize as funcionalidades do Laravel para fazer solicitações HTTP à API.
+
+Tabela de usuários paginada:
+
+Crie uma rota no Laravel para acessar a página do usuário.
+Desenvolva um controlador que consuma a API
+https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0
+recupera dados do usuário e implementa lógica de paginação.
+
+Crie uma visualização que exiba os dados do usuário em uma tabela paginada.
+
+Estilize a tabela e a página usando CSS ou uma estrutura CSS (por exemplo, Bootstrap).
+
+Implementação Técnica:
+
+Use Laravel para configurar o ambiente de desenvolvimento e criar rotas, controladores e visualizações.
+
+Use funcionalidades do Laravel para fazer solicitações HTTP para a API
+https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0
+Implemente a lógica de paginação para exibir dados do usuário em grupos (10 usuários por página).
+
+Use CSS ou uma estrutura CSS para estilizar a tabela e a página do usuário.
+
+Notas Adicionais:
+
+Certifique-se de seguir as práticas recomendadas do Laravel em relação à estrutura do projeto, organização do código e biblioteca
+uso.
+
+Documente quaisquer limitações ou suposições que você encontrar durante o desenvolvimento.
+
+Conclusão:
+
+Esperamos que você conclua esta tarefa desenvolvendo um programa usando Laravel para consumir a API
+https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0 e exibir dados do usuário em um
+tabela paginada. Isso nos permitirá avaliar sua capacidade de configurar o Laravel, consumir APIs e
+criar interfaces de usuário.
+
+Boa sorte!
