@@ -1,74 +1,74 @@
 # User List App
+[Ler em Português](README_PT.md)
 
+This project allows you to consume the API [https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0](https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6- 71a188eaaee0) using the Laravel framework and displaying user data in a paginated table. Completing this challenge demonstrates the ability to configure Laravel, consume APIs, and create user interfaces effectively.
 
-Esse projeto permite consumir a API [https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0](https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0) utilizando o framework Laravel e exibir os dados dos usuários em uma tabela paginada. A conclusão deste desafio demonstra a capacidade de configurar o Laravel, consumir APIs e criar interfaces de usuário de forma eficaz.
+## Requirements
 
-## Requisitos
+Before starting the project, ensure that the following software is installed in your development environment:
 
-Antes de iniciar o projeto, verifique se o seguinte software está instalado em seu ambiente de desenvolvimento:
+- **Laravel**: Laravel was installed in the development environment.
+- **Composer**: Composer is installed. You can verify the installation by running the `composer --version` command in the terminal.
+- **Node.js**: Node.js is installed. You can verify the installation by running the `node -v` command in the terminal. If it is not installed, you can download it from [https://nodejs.org/](https://nodejs.org/).
+- The environment is correctly configured to run Laravel.
 
--  **Laravel**: O Laravel foi instalado no ambiente de desenvolvimento.
--  **Composer**: O Composer está instalado. Você pode verificar a instalação executando o comando `composer --version` no terminal.
--  **Node.js**: O Node.js está instalado. Você pode verificar a instalação executando o comando `node -v` no terminal. Se não estiver instalado, você pode baixá-lo em [https://nodejs.org/](https://nodejs.org/).
--  O ambiente está configurado corretamente para executar o Laravel.
+# Start the Project
 
-# Iniciar o Projeto
+Follow the steps below to launch the project in your development environment:
 
-Siga as etapas abaixo para iniciar o projeto em seu ambiente de desenvolvimento:
-
-1. Clone o repositório do projeto do GitHub para seu ambiente local:
+1. Clone the project repository from GitHub to your local environment:
 ```
 git clone https://github.com/seuusuario/nome-do-projeto.git
 ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
 ```
-cd nome-do-projeto
+cd project-name
 ```
 
-3. Instale as dependências PHP usando o Composer:
+3. Install PHP dependencies using Composer:
 ```
 composer install
 ```
 
-4. Instale as dependências JavaScript usando o npm:
+4. Install JavaScript dependencies using npm:
 ```
 npm install
 ```
 
-5. Compile os ativos JavaScript e CSS usando o npm:
+5. Compile JavaScript and CSS assets using npm:
 ```
 npm run dev
 ```
 
-6. Inicie o servidor de desenvolvimento do Laravel:
+6. Start the Laravel development server:
 ```
-php artisan serve
+php artisan serves
 ```
 
-Após seguir essas etapas, você poderá acessar o projeto em seu navegador em `http://localhost:8000`. Certifique-se de que o ambiente esteja configurado corretamente e que os requisitos (Laravel, Composer, Node.js) estejam instalados.
+After following these steps, you will be able to access the project in your browser at `http://localhost:8000`. Make sure the environment is configured correctly and the requirements (Laravel, Composer, Node.js) are installed.
 
-Lembre-se de que você pode precisar configurar o arquivo `.env` do Laravel com as configurações apropriadas, como a conexão com o banco de dados, se for necessário para o seu projeto. Certifique-se de ler a documentação do Laravel para obter informações detalhadas sobre o ambiente e as configurações.
+Keep in mind that you may need to configure Laravel's `.env` file with appropriate settings, such as database connection, if necessary for your project. Be sure to read the Laravel documentation for detailed information about the environment and settings.
 
-## Tarefas Realizadas
+## Tasks Performed
 
-Para a realização deste projeto, as seguintes tarefas foram concluídas:
+To carry out this project, the following tasks were completed:
 
-- [x] **Configuração do Laravel**: Configuração inicial do ambiente de desenvolvimento com Laravel.
+- [x] **Laravel Configuration**: Initial configuration of the development environment with Laravel.
 
-- [x] **Consumo da API**: Implementação da rota para consumir os dados da API externa usando as funcionalidades do Laravel para fazer solicitações HTTP.
+- [x] **API Consumption**: Implementation of the route to consume data from the external API using Laravel features to make HTTP requests.
 
-- [x] **Tabela de Usuários Paginada**: Criação de uma rota para acessar a página de usuários. Desenvolvimento de um controlador que consome a API, recupera os dados dos usuários e implementa a lógica de paginação.
+- [x] **Paginated User Table**: Creation of a route to access the users page. Development of a controller that consumes the API, retrieves user data and implements the paging logic.
 
-- [x] **Visualização da Tabela**: Criação de uma visualização que exibe os dados dos usuários em uma tabela paginada.
+- [x] **Table View**: Creating a view that displays user data in a paginated table.
 
-- [x] **Estilização**: Estilização da tabela e da página do usuário utilizando CSS.
+- [x] **Styling**: Styling the table and user page using CSS.
 
-- [x] **Implementação Técnica**: Utilização do Laravel para configurar o ambiente de desenvolvimento, criar rotas, controladores e visualizações. Uso das funcionalidades do Laravel para fazer solicitações à API externa e implementação da lógica de paginação.
+- [x] **Technical Implementation**: Use of Laravel to configure the development environment, create routes, controllers and views. Use of Laravel features to make requests to the external API and implement paging logic.
 
-## Notas Adicionais
-- 
-- 
+## Additional Notes
+-
+-
 <br>
 <hr>
 <br>
