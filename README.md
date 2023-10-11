@@ -1,6 +1,5 @@
 # User List App
 [Read in Português](README_PT.md)
-
 This project allows you to consume the API [https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0](https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6- 71a188eaaee0) using the Laravel framework and displaying user data in a paginated table. Completing this challenge demonstrates the ability to configure Laravel, consume APIs, and create user interfaces effectively.
 
 ## Requirements
@@ -18,12 +17,12 @@ Follow the steps below to launch the project in your development environment:
 
 1. Clone the project repository from GitHub to your local environment:
 ```
-git clone https://github.com/seuusuario/nome-do-projeto.git
+git clone https://github.com/Mizaeldouglas/technical_test_laravel_user_list.git
 ```
 
 2. Navigate to the project directory:
 ```
-cd project-name
+cd technical_test_laravel_user_list
 ```
 
 3. Install PHP dependencies using Composer:
@@ -46,7 +45,7 @@ npm run dev
 php artisan serves
 ```
 
-After following these steps, you will be able to access the project in your browser at `http://localhost:8000`. Make sure the environment is configured correctly and the requirements (Laravel, Composer, Node.js) are installed.
+After following these steps, you will be able to access the project in your browser at `http://localhost:8000/users-list`. Make sure the environment is configured correctly and the requirements (Laravel, Composer, Node.js) are installed.
 
 Keep in mind that you may need to configure Laravel's `.env` file with appropriate settings, such as database connection, if necessary for your project. Be sure to read the Laravel documentation for detailed information about the environment and settings.
 
@@ -62,13 +61,17 @@ To carry out this project, the following tasks were completed:
 
 - [x] **Table View**: Creating a view that displays user data in a paginated table.
 
-- [x] **Styling**: Styling the table and user page using CSS.
+- [x] **Styling**: Styling the table and the user page using CSS (I used pure CSS and tailwind).
 
-- [x] **Technical Implementation**: Use of Laravel to configure the development environment, create routes, controllers and views. Use of Laravel features to make requests to the external API and implement paging logic.
+## Additional Tasks
+- [x] **Ordering the User List in Alphabetical Order**: The user list was sorted in alphabetical order.
 
-## Additional Notes
--
--
+- [x] **Loading during API Loading**: A loading was added to indicate external API loading.
+
+- [x] **Responsiveness**: The site was designed to be responsive and work well on mobile and tablet screens.
+
+- [x] **Deploy**: The project was Deployed and is accessible at [https://user-list.mizaeldouglas.com.br/users-list](https://user-list.mizaeldouglas. com.br/users-list).
+
 <br>
 <hr>
 <br>
