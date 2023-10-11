@@ -18,12 +18,12 @@ Siga as etapas abaixo para iniciar o projeto em seu ambiente de desenvolvimento:
 
 1. Clone o repositório do projeto do GitHub para seu ambiente local:
 ```
-git clone https://github.com/seuusuario/nome-do-projeto.git
+git clone https://github.com/Mizaeldouglas/technical_test_laravel_user_list.git
 ```
 
 2. Navegue até o diretório do projeto:
 ```
-cd nome-do-projeto
+cd technical_test_laravel_user_list
 ```
 
 3. Instale as dependências PHP usando o Composer:
@@ -46,7 +46,7 @@ npm run dev
 php artisan serve
 ```
 
-Após seguir essas etapas, você poderá acessar o projeto em seu navegador em `http://localhost:8000`. Certifique-se de que o ambiente esteja configurado corretamente e que os requisitos (Laravel, Composer, Node.js) estejam instalados.
+Após seguir essas etapas, você poderá acessar o projeto em seu navegador em `http://localhost:8000/users-list`. Certifique-se de que o ambiente esteja configurado corretamente e que os requisitos (Laravel, Composer, Node.js) estejam instalados.
 
 Lembre-se de que você pode precisar configurar o arquivo `.env` do Laravel com as configurações apropriadas, como a conexão com o banco de dados, se for necessário para o seu projeto. Certifique-se de ler a documentação do Laravel para obter informações detalhadas sobre o ambiente e as configurações.
 
@@ -62,13 +62,17 @@ Para a realização deste projeto, as seguintes tarefas foram concluídas:
 
 - [x] **Visualização da Tabela**: Criação de uma visualização que exibe os dados dos usuários em uma tabela paginada.
 
-- [x] **Estilização**: Estilização da tabela e da página do usuário utilizando CSS.
+- [x] **Estilização**: Estilização da tabela e da página do usuário utilizando CSS (eu utilizei CSS puro e tailwind).
 
-- [x] **Implementação Técnica**: Utilização do Laravel para configurar o ambiente de desenvolvimento, criar rotas, controladores e visualizações. Uso das funcionalidades do Laravel para fazer solicitações à API externa e implementação da lógica de paginação.
+## Tarefas Adicionais
+- [x] **Ordenação da Lista de Usuários em Ordem Alfabética**: A lista de usuários foi ordenada em ordem alfabética.
 
-## Notas Adicionais
-- 
-- 
+- [x] **Loading durante o Carregamento da API**: Foi adicionado um loading para indicar o carregamento da API externa.
+
+- [x] **Responsividade**: O site foi projetado para ser responsivo e funcionar bem em telas de celular e tablets.
+
+- [x] **Deploy**: O projeto foi feito o Deploy e está acessível em [https://user-list.mizaeldouglas.com.br/users-list](https://user-list.mizaeldouglas.com.br/users-list).
+
 <br>
 <hr>
 <br>
