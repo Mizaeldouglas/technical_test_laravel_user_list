@@ -40,13 +40,17 @@ npm install
 ```
 .env
 ```
+6. run the command to create `APP_KEY`:
+```
+php artisan key:generate
+```
 
-6. Compile JavaScript and CSS assets using npm:
+7. Compile JavaScript and CSS assets using npm:
 ```
 npm run dev
 ```
 
-7. Start the Laravel development server:
+8. Start the Laravel development server:
 ```
 php artisan serve
 ```

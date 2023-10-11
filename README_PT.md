@@ -39,13 +39,16 @@ npm install
 ```
 .env
 ```
-
-6. Compile os ativos JavaScript e CSS usando o npm:
+6. Execute o comando para criar `APP_KEY`:
+```
+php artisan key:generate
+```
+7. Compile os ativos JavaScript e CSS usando o npm:
 ```
 npm run dev
 ```
 
-7. Inicie o servidor de desenvolvimento do Laravel:
+8. Inicie o servidor de desenvolvimento do Laravel:
 ```
 php artisan serve
 ```
