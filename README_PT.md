@@ -71,7 +71,7 @@ Para a realização deste projeto, as seguintes tarefas foram concluídas:
 
 - [x] **Responsividade**: O site foi projetado para ser responsivo e funcionar bem em telas de celular e tablets.
 
-- [x] **Deploy**: O projeto foi feito o Deploy e está acessível em [https://user-list.mizaeldouglas.com.br/users-list](https://user-list.mizaeldouglas.com.br/users-list).
+- [x] **Deploy**: O projeto foi feito o Deploy e está acessível [aqui](https://user-list.mizaeldouglas.com.br/users-list).
 
 <br>
 <hr>

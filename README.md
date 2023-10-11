@@ -72,7 +72,7 @@ To carry out this project, the following tasks were completed:
 
 - [x] **Responsiveness**: The site was designed to be responsive and work well on mobile and tablet screens.
 
-- [x] **Deploy**: The project was Deployed and is accessible at [https://user-list.mizaeldouglas.com.br/users-list](https://user-list.mizaeldouglas. com.br/users-list).
+- [x] **Deploy**: The project was Deployed and is accessible [here](https://user-list.mizaeldouglas.com.br/users-list).
 
 <br>
 <hr>
