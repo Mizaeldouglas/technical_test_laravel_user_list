@@ -52,7 +52,6 @@ Lembre-se de que você pode precisar configurar o arquivo `.env` do Laravel com 
 
 ## Tarefas Realizadas
 
-
 Para a realização deste projeto, as seguintes tarefas foram concluídas:
 
 - [x] **Configuração do Laravel**: Configuração inicial do ambiente de desenvolvimento com Laravel.

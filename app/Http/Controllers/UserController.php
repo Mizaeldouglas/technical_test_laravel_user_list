@@ -13,10 +13,11 @@ class UserController extends Controller
      * @throws GuzzleException
      */
 
-    public function index ()
+    public function index()
     {
         $client = new Client();
         $response = $client->get('https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0');
+
         try {
             $data = json_decode($response->getBody(), true, 512, JSON_THROW_ON_ERROR);
             $users = $data['users'] ?? [];
@@ -34,6 +35,8 @@ class UserController extends Controller
         } catch (JsonException $e) {
             $users = [];
         }
+
         return view('pages.home', compact('users'));
     }
+
 }
