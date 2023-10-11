@@ -1,5 +1,5 @@
 # User List App
-[Read in English](README.md)
+[Ler em Inglês](README.md)
 
 Esse projeto permite consumir a API [https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0](https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0) utilizando o framework Laravel e exibir os dados dos usuários em uma tabela paginada. A conclusão deste desafio demonstra a capacidade de configurar o Laravel, consumir APIs e criar interfaces de usuário de forma eficaz.
 
