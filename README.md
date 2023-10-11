@@ -36,15 +36,19 @@ composer install
 ```
 npm install
 ```
+5. renamed `.env.example` to:
+```
+.env
+```
 
-5. Compile JavaScript and CSS assets using npm:
+6. Compile JavaScript and CSS assets using npm:
 ```
 npm run dev
 ```
 
-6. Start the Laravel development server:
+7. Start the Laravel development server:
 ```
-php artisan serves
+php artisan serve
 ```
 
 After following these steps, you will be able to access the project in your browser at `http://localhost:8000/users-list`. Make sure the environment is configured correctly and the requirements (Laravel, Composer, Node.js) are installed.
