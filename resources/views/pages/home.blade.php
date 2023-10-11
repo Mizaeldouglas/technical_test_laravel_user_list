@@ -3,94 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>User List | Home</title>
     @vite('resources/css/app.css')
+    <style>
+        .container {
+            max-width: 100%;
+            padding: 0 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .loading-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-spinner {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .loading-spinner {
+                width: 30px;
+                height: 30px;
+                border-width: 3px;
+            }
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
-{{--    <div class="align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-white shadow-lg px-12">--}}
-{{--        <div class="flex justify-between">--}}
-{{--            <div class="inline-flex border rounded w-7/12 px-2 lg:px-6 h-12 bg-transparent">--}}
-{{--                <div class="flex flex-wrap items-stretch w-full h-full mb-6 relative">--}}
-{{--                    <div class="flex">--}}
-{{--                                    <span class="flex items-center leading-normal bg-transparent rounded rounded-r-none border border-r-0 border-none lg:px-3 py-2 whitespace-no-wrap text-grey-dark text-sm">--}}
-{{--                                        <svg width="18" height="18" class="w-4 lg:w-auto" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                            <path d="M8.11086 15.2217C12.0381 15.2217 15.2217 12.0381 15.2217 8.11086C15.2217 4.18364 12.0381 1 8.11086 1C4.18364 1 1 4.18364 1 8.11086C1 12.0381 4.18364 15.2217 8.11086 15.2217Z" stroke="#455A64" stroke-linecap="round" stroke-linejoin="round" />--}}
-{{--                                            <path d="M16.9993 16.9993L13.1328 13.1328" stroke="#455A64" stroke-linecap="round" stroke-linejoin="round" />--}}
-{{--                                        </svg>--}}
-{{--                                    </span>--}}
-{{--                    </div>--}}
-{{--                    <input type="text" class="flex-shrink flex-grow flex-auto leading-normal tracking-wide w-px flex-1 border border-none border-l-0 rounded rounded-l-none px-3 relative focus:outline-none text-xxs lg:text-xs lg:text-base text-gray-500 font-thin" placeholder="Search">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-    <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-white shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
-        <table class="min-w-full">
-            <thead>
-            <tr>
-                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Name</th>
-                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Age</th>
-                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Email</th>
-            </tr>
-            </thead>
-            <tbody class="bg-white">
-            @foreach($users['users'] as $user)
-            <tr>
-                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
-                    <div class="text-sm leading-5 text-blue-900">{{$user['name']}}</div>
-                </td>
-                <td class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 border-gray-500 text-sm leading-5">{{$user['age']}}</td>
-                <td class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 border-gray-500 text-sm leading-5">{{$user['email']}}</td>
-            </tr>
-            @endforeach
-            </tbody>
-        </table>
-        <div class="sm:flex-1 sm:flex sm:items-center sm:justify-between mt-4 work-sans">
-            <div>
-                <p class="text-sm leading-5 text-blue-700">
-                    Showing
-                    <span class="font-medium">1</span>
-                    to
-                    <span class="font-medium">200</span>
-                    of
-                    <span class="font-medium">2000</span>
-                    results
-                </p>
-            </div>
-            <div>
-                <nav class="relative z-0 inline-flex shadow-sm">
-                    <div	>
-                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="Previous" v-on:click.prevent="changePage(pagination.current_page - 1)">
-                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                        </a>
+<h1 class="flex justify-center text-2xl text-blue-500 pt-14">Users List</h1>
+<div class="loading-container" id="loadingContainer">
+    <div class="loading-spinner"></div>
+</div>
+<div class="container mx-auto px-1 sm:px-2 lg:px-8">
+
+    <div class="py-8">
+        <div class="-my-2 sm:-mx-6 lg:-mx-8">
+            <div
+                class="align-middle inline-block min-w-full shadow overflow-hidden bg-white shadow-dashboard rounded-lg">
+                <table class="min-w-full">
+                    <thead>
+                    <tr>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                            Name
+                        </th>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                            Age
+                        </th>
+                        <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">
+                            Email
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                    @if ($users && count($users) > 0)
+                        @foreach ($users as $user)
+                            <tr>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
+                                    <div class="text-sm leading-5 text-blue-900">{{ $user['name'] }}</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 border-gray-500 text-sm leading-5">{{ $user['age'] }}</td>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 border-gray-500 text-sm leading-5">{{ $user['email'] }}</td>
+                            </tr>
+                        @endforeach
+                    @else
+                        <tr>
+                            <td colspan="3"
+                                class="px-6 py-4 whitespace-no-wrap text-blue-900 border-b border-gray-500 text-sm leading-5">
+                                No users found.
+                            </td>
+                        </tr>
+                    @endif
+                    </tbody>
+                </table>
+                <div class="my-4 flex justify-between pl-3 pr-3">
+                    <div>
+                        <span class="text-gray-700">Showing {{ $users->firstItem() }} to {{ $users->lastItem() }} of {{ $users->total() }} results</span>
                     </div>
                     <div>
-                        <a href="#" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-blue-700 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-tertiary active:text-gray-700 transition ease-in-out duration-150 hover:bg-tertiary">
-                            1
-                        </a>
-                        <a href="#" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-blue-600 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-tertiary active:text-gray-700 transition ease-in-out duration-150 hover:bg-tertiary">
-                            2
-                        </a>
-                        <a href="#" class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-blue-600 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-tertiary active:text-gray-700 transition ease-in-out duration-150 hover:bg-tertiary">
-                            3
-                        </a>
+                        <ul class="flex">
+                            @for ($i = 1; $i <= $users->lastPage(); $i++)
+                                <li>
+                                    <a href="{{ route('users.index', ['page' => $i]) }}"
+                                       class="px-3 py-1 mx-1 rounded-lg border border-gray-300  hover:bg-blue-400 hover:text-black transition duration-300 ease-in-out @if ($users->currentPage() == $i) bg-blue-500 text-white @endif">{{ $i }}</a>
+                                </li>
+                            @endfor
+                        </ul>
                     </div>
-                    <div v-if="pagination.current_page < pagination.last_page">
-                        <a href="#" class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="Next">
-                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </nav>
+                </div>
             </div>
         </div>
     </div>
 </div>
 </body>
+<script>
+    function showLoading() {
+        document.getElementById('loadingContainer').style.display = 'flex';
+    }
+
+    function hideLoading() {
+        document.getElementById('loadingContainer').style.display = 'none';
+    }
+
+    //  Mostrar o "loading" antes de fazer a solicitação da API
+    showLoading();
+
+    // Esconder o "loading" quando os dados da API forem carregados
+    setTimeout(function () {
+        hideLoading();
+    }, 3000); // espera de 3 segundos
+</script>
 </html>
